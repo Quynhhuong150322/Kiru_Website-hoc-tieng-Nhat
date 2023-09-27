@@ -1,0 +1,85 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import avt from "../image/avt.png";
+import {GiTriceratopsHead} from "react-icons/gi";
+import {GoArrowLeft} from "react-icons/go";
+
+
+const TrangChu = () => {
+    return (
+        <div className="pt-[90px] pl-[270px]">
+            <div className="flex flex-row">
+                <div className="w-[450px] h-[250px] bg-amber-300/80 rounded-[20px] items-center">
+                    <p className="text-center font-bold text-[20px] pt-3">Chào mừng Nhóm 2 đã đến với Kiru!</p>
+                    <div className="pt-4 pl-[70px] flex flex-grow items-center">
+                        <img 
+                            className="h-[100px] w-[100px] rounded-[10px] "
+                            src = {avt}
+                            alt = "avt" 
+                        />
+                        <p className="font-inter font-black text-[26px] pl-8">Quỳnh Hương</p>
+                    </div>
+                    <div className="pt-6 pl-11">
+                        <div className="h-5 w-[350px] bg-white rounded-[10px]"></div>
+                    </div>
+                    <div className="flex flex-row gap-[100px] pt-2">
+                        <p className="font-bold items-center pl-11 ">N5</p>
+                        <p className="font-bold items-center pl-7 ">00/100</p>
+                        <p className="font-bold items-center pl-7 ">N4</p>
+                    </div>
+                </div>
+                <div className="">
+                    <div className="flex flex-row gap-10 pl-[30px] ">
+                        <div className="w-[300px] h-[130px] bg-white shadow-2xl rounded-[20px] ">
+                            <p className="text-[20px] font-black pt-4 pl-7">Khoá học</p>
+                            <div className="flex flex-row gap-[100px] pt-5">
+                                <p className="font-bold items-center pl-7 ">00/50</p>
+                                <p className="font-bold text-[13px]">0 chứng nhận</p>
+                            </div>
+                            <div className="pt-2 pl-7">
+                                <div className="h-3 w-[240px] bg-amber-300 rounded-[10px]"></div>
+                            </div>
+                        </div>
+                        <div className="w-[300px] h-[130px] bg-white shadow-2xl rounded-[20px] ">
+                            <p className="text-[20px] font-black pt-4 pl-7">Thi thử JLPT</p>
+                            <div className="flex flex-row gap-[100px] pt-5">
+                                <p className="font-bold items-center pl-7 ">00/50</p>
+                                <p className="font-bold text-[13px]">0 chứng nhận</p>
+                            </div>
+                            <div className="pt-2 pl-7">
+                                <div className="h-3 w-[240px] bg-amber-300 rounded-[10px]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-row pt-5 pl-[30px] text-center items-center">
+                        <p className="font-bold ">Thành tích của bạn</p>
+                        <p className="text-[13px] pl-5">(Xem tất cả)</p>
+                    </div>
+                    <div className="pl-[30px] pt-3">
+                        <div className="h-[50px] w-[50px] bg-sky-500 pt-1 pl-2">
+                            <GiTriceratopsHead className="text-white h-[40px] w-[40px]"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="pt-10">
+                <p className="text-[25px] font-black ">Khoá học</p>
+                <div className="flex flex-row items-center">
+                    <div className="">
+                        <button 
+                            type="button"
+                            className = "w-[30px] h-[30px] rounded-full  bg-amber-300/10  font-interBold text-[25px] items-center pl-[2px]">
+                            <GoArrowLeft className=""/>
+                        </button>
+                    </div>
+                    <div className="">
+                        <div className="h-[250px] w-[200px] bg-amber-300 rounded-[20px]">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+export default TrangChu;
